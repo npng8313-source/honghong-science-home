@@ -77,6 +77,12 @@ a { color: var(--gold-soft); }
 .sec-title.center { text-align: center; }
 .sec-title.center::after { left: 50%; transform: translateX(-50%); }
 .about-grid { display: grid; gap: 28px; align-items: center; }
+.photo-frame.avatar img { aspect-ratio: 3 / 4; object-position: top; background: #f4f4f2; }
+.about-main { display: grid; gap: 24px; }
+.about-avatar { margin: 0 auto; max-width: 300px; padding: 10px; border: 1px solid var(--gold); border-radius: var(--radius); background: #f4f4f2; }
+.about-avatar img { width: 100%; height: auto; border-radius: 8px; }
+.card.career { display: flex; align-items: center; gap: 20px; }
+.id-photo { flex: none; width: 96px; height: 96px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid var(--gold); }
 .about-text { margin: 0; font-size: 18px; color: var(--text); }
 .stat { text-align: center; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 20px; background: var(--card); }
 .stat-num { color: var(--gold); font-size: 64px; font-weight: 800; line-height: 1; }
@@ -129,7 +135,7 @@ a { color: var(--gold-soft); }
   .btn-row { flex-direction: row; justify-content: center; }
   .btn-row.center { align-items: center; }
   .cards { grid-template-columns: repeat(3, 1fr); }
-  .about-grid { grid-template-columns: 1.6fr 1fr; }
+  .about-grid { grid-template-columns: 1.4fr 1fr; }
   .gallery { grid-template-columns: 1.6fr 1fr; align-items: start; }
   .video-grid { grid-template-columns: repeat(2, 1fr); }
   .shot.video { max-width: none; }
